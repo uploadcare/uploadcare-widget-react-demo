@@ -101,7 +101,7 @@ const useWidget = (
       widget.current.onUploadComplete.remove(changeCallback)
       widget.current.onChange.remove(fileSelectedCallback)
     }
-  }, [changeCallback, fileSelectedCallback])
+  }, [changeCallback, fileSelectedCallback, uploadcare, attributes])
 
   useEffect(() => {
     let dialog
